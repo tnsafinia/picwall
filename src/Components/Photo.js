@@ -8,7 +8,10 @@ function Photo(props) {
 
             {props.items.map((i) =>
                 <figure key={i.id} style={{ paddingLeft: "0.6%", paddingRight: "0.6%" }}>
-                    <img src={"https://live.staticflickr.com/" + i.server + "/" + i.id + "_" + i.secret + ".jpg"} style={{ borderRadius: "5%" }} />
+                    <img src={"https://live.staticflickr.com/" + i.server + "/" + i.id + "_" + i.secret + ".jpg"}
+                         style={{ borderRadius: "5%" }}
+                         alt="img"
+                    />
                 </figure>
             )}
          </div> 
